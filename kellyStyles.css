@@ -1,0 +1,12 @@
+body{
+    font-family: Gideon Roman;
+    background-color: var(--background-color);
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+
+
