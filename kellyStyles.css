@@ -1,12 +1,58 @@
+:root{
+    --text-color: black;
+    --link-color: #6E00FA;
+    --background-color: #EBB5FB
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body{
     font-family: Gideon Roman;
     background-color: var(--background-color);
 }
 
 a{
+    font-family: Oswald;
     color: var(--link-color);
     text-decoration: none;
 }
 
+a:hover {
+    color: #00ff26;
+}
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+    align-items: center;
+}
 
+nav .itemsRight a{
+    margin: 0 10px;
+}
+
+nav .nameCenter{
+    
+}
+
+@media(max-width: 600px){
+    nav{
+        padding: 0 20px;
+    }
+}
+
+section .sect1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px 0;
+}
+
+/* section .sect1 p{
+    display: inline-block;
+    padding: 5px 10px;
+} */
