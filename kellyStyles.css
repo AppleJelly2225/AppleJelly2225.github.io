@@ -1,7 +1,7 @@
 :root{
     --text-color: black;
     --link-color: #6E00FA;
-    --background-color: #EBB5FB
+    --background-color: #EBB5FB;
 }
 
 * {
@@ -19,9 +19,9 @@ a{
     text-decoration: none;
 }
 
-a:hover {
-    color: #00ff26;
-}
+/* a:hover {
+    color: #bd8aff;
+} */
 
 nav {
     display: flex;
