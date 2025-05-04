@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelly's Portfolio</title>
-    <link rel="stylesheet" href="kellyStyles.css">
+    <!-- <link rel="stylesheet" href="kellyStyles.css"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        :root{
+            --text-color: black;
+            --link-color: #6E00FA;
+            --background-color: #EBB5FB;
+            }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Gideon Roman;
+            background-color: var(--background-color);
+        }
+
+        a{
+            font-family: Oswald;
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #6c32b8;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px;
+            height: 80px;
+            align-items: center;
+        }
+
+        nav .itemsRight a{
+            margin: 0 10px;
+        }
+
+        nav .nameCenter{
+            
+        }
+
+        @media(max-width: 600px){
+            nav{
+                padding: 0 20px;
+            }
+        }
+
+        .sect1{
+            display: flex;
+            justify-content: space-between;
+            /* padding: 20px 50px; */
+            margin: 50px 0;
+        }
+
+        section .sect1 p{
+            display: inline-block;
+            padding: 5px 10px;
+        }
+
+        img{
+            width: 250px;
+            border-radius: 25%;
+            /* height: 350px; */
+        }
+    </style>
+
 </head>
 <body>
     <nav>
          <h1 class="nameCenter" style="font-family: Dancing Script;">
-            Audrianna Kelly
+            <!-- Audrianna Kelly -->
          </h1>
 
          <div class="itemsRight">
@@ -37,13 +105,14 @@
 
     <main>
         <section class="sect1">
-            <div>
+            <div id="header">
                 <h2>Hello, I'm Audrianna Kelly, or Addie</h2>
                 <p>To graduate college and become a knowledgeable and dependable Army Armor officer, 
                     to learn and experience as much as I can about the craft by volunteering for extra 
                     work and applying to internships. 
                 </p>
-                
+
+                <div id="links">
                 <a href="#education&skills">
                     <i class="fa-solid fa-graduation-cap"></i>
                     Education
@@ -56,13 +125,23 @@
                     <i class="fa-solid fa-phone"></i>
                     Contact me
                 </a>
+                </div>
             </div>
-            <!-- <img src="TTGM7523.JPG" alt="girl w/ weighted vest, on outside trail;" max-width="50px"; max-height="50px"> -->
 
+            <div id="pic1">
+                <img src="IMG_1034(3).JPG" alt="girl w/ weighted vest, on outside trail;">
+            </div>
         </section>
-
         <section class="sect2">
-            
+            <h2>Education</h2>
+            <div id="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit in odit, cumque 
+                dolor deleniti hic deserunt sed cupiditate quisquam maiores voluptas? Error illo autem 
+                nesciunt totam aperiam labore aliquid dolore!
+            </div>
+            <div>
+
+            </div>
         </section>
     </main>
 </body>
