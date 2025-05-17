@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelly's Portfolio</title>
-    <link rel="stylesheet" href="kellyStyles.css">
+    <!-- <link rel="stylesheet" href="kellyStyles.css"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,56 +13,288 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        :root{
+            --text-color: black;
+            --link-color: #6E00FA;
+            --background-color: #EBB5FB;
+            }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Gideon Roman;
+            background-color: var(--background-color);
+        }
+
+        a{
+            font-family: Oswald;
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #6c32b8;
+        }
+
+        #links a{
+            display: inline-block;
+            padding: 5px 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px;
+            height: 80px;
+            align-items: center;
+        }
+
+        nav .itemsRight a{
+            margin: 0 10px;
+        }
+
+        @media(max-width: 600px){
+            nav{
+                padding: 0 20px;
+            }
+        }
+
+        .sect1{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            margin: 50px 0;
+            align-items: center;
+        }
+
+        /* section .sect1 p{
+            display: inline-block;
+            padding: 5px 10px;
+        } */
+
+        img{
+            width: 250px;
+            border-radius: 25%;
+            /* height: 350px; */
+        }
+
+        .sect2{
+            padding: 0px 50px;
+            margin-bottom: 50px;
+        }
+
+        #skills{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cell{
+            display: flex;
+            /* justify-content: center; */
+            padding: 5px 20px;
+            align-items: center;
+        }
+
+        .set {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #skills i{
+            font-size: 2em;
+            color: var(--link-color);
+
+        }
+
+        #skills span{
+            padding: 10px;
+            font-size: 15px;
+            font-family: Oswald;
+            /* font-weight: bold; */
+        }
+        
+        h3{
+            text-align: center;
+            padding: 10px 10px 0px 0px;
+            /* color: var(--link-color); */
+
+        }
+
+        h4{
+            text-align: center;
+        }
+
+        .sect3, .sect4{
+            /* text-align: center; */
+            padding: 10px 0px 0px 0px;
+        }
+
+    </style>
+
 </head>
 <body>
     <nav>
          <h1 class="nameCenter" style="font-family: Dancing Script;">
             Audrianna Kelly
          </h1>
-
          <div class="itemsRight">
-
             <a href="https://github.com/AppleJelly2225" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github-alt"></i>
                 GitHub
             </a>
-
             <a href="mailto:kellyad25@vmi.edu">
                 <i class="fa-solid fa-envelope"></i>
                 Email
             </a>
-            
         </div>
     </nav>
-
     <main>
         <section class="sect1">
-            <div>
-                <h2>Hello, I'm Audrianna Kelly, or Addie</h2>
-                <p>To graduate college and become a knowledgeable and dependable Army Armor officer, 
-                    to learn and experience as much as I can about the craft by volunteering for extra 
-                    work and applying to internships. 
+            <div id="header">
+                <h2>Call me Addie ^U^</h2>
+                <p>My goal is to learn about the cyber world, how to build, develop, secure, and manage software and hardware, 
+                    to gain experience in software development, network security, possibly hacking, and/or web development, 
+                    and to improve my collaboration skills by working in groups with new people, getting to know them and working with them.
                 </p>
-                
-                <a href="#education&skills">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    Education
-                </a>
-                <a href="#intro">
-                    <i class="fa-solid fa-pen"></i>
-                    About me
-                </a>
-                <a href="#contact">
-                    <i class="fa-solid fa-phone"></i>
-                    Contact me
-                </a>
-            </div>
-            <!-- <img src="TTGM7523.JPG" alt="girl w/ weighted vest, on outside trail;" max-width="50px"; max-height="50px"> -->
 
+                <div id="links">
+                    <a href="#education&skills">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Education
+                    </a>
+                    <a href="#intro">
+                        <i class="fa-solid fa-pen"></i>
+                        About me
+                    </a>
+                    <a href="#contact">
+                        <i class="fa-solid fa-phone"></i>
+                        Contact me
+                    </a>
+                </div>
+                
+            </div>
+            <div id="pic1">
+                    <img src="IMG_1034(3).jpg" alt="girl in a dark navy blue blouse with golden button (3 columns, 8 rows) in a skirt;">
+                </div>
         </section>
 
         <section class="sect2">
+            <h2>Education</h2>
+            <p id="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit in odit, cumque 
+                dolor deleniti hic deserunt sed cupiditate quisquam maiores voluptas? Error illo autem 
+                nesciunt totam aperiam labore aliquid dolore!
+            </p>
             
+            <h3>Program languages</h3>
+
+            <div id="skills">
+                <div class="cell" id="JS">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="cell" id="python">
+                    <i class="fa-brands fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="cell" id="html">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="cell" id="php">
+                    <i class="fa-brands fa-php"></i>
+                    <span>PHP</span>
+                </div>
+            </div>
+
+            <h3>Emergency</h3>
+
+            <div id="skills">
+                <div class="cell" id="JS">
+                    <i class="fa-solid fa-star-of-life"></i>
+                    <span>Lifeguard certified</span>
+                </div>
+                <div class="cell" id="python">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <span>CPR certified</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="sect3">
+            <h2>Activities</h2>
+
+            <div class="cell" id="threatcasting">
+                <h3>Cyber Threat casting Workshop</h3>
+                <p> We learned how to invent new software by comig up 
+                    with or predicting future problems, bugs, or hacks 
+                    in said program, system, or device by making 
+                    up scenarios and brainstorming ways to prevent such 
+                    scenarios.</p>
+            </div>
+            
+            <div class="cell" id="RC">
+                <h3>Rat challenge:</h3>
+            </div>
+            <h4>House MT.</h4>
+            <!-- <div class="cell" id="mountain"> -->
+                <div class="set" id="mountain">
+                    <p style="text-align: center;">ACIC (Assistant Cadet in Charge) during 2nd year </p>
+                    <p style="padding-right: 10px;">CIC (Cadet in Charge) during 3rd year</p>
+                    <p>Responsible for briefs and supervising the safety of others.</p>
+                    <p style="padding-left: 10px;">Involved in team development of cadre</p>
+                    <p>Responsible for the safety of a medium-large group of new cadets/freshmen.</p>
+                </div>
+            <!-- </div> -->
+            <h4>Pamper Pole</h4>
+            <!-- <div class="cell" id="pole"> -->
+                <div class="set" id="pole">
+                    <p style="padding-right: 10px;">CIC 2 years straight</p>
+                    <p style="max-width: 400px; padding: 0px 10px;">Responsible for the safety of new cadets who were participarting
+                        in the activity of climbing a long wooden pole & jumping from the top, 
+                        to be caught by other new cadets.</p>
+                    <p style="max-width: 400px; padding-right: 10px;">Creating relational processes for fellow cadets to overcome doubt and 
+                        increase trust.</p>
+                    <p>The safety of others and retiring equipment after usage</p>
+                </div>
+            <!-- </div> -->
+            <div class="section" id="work">
+                <h2>Work outside of school</h2>
+                <h3>Lifeguarding</h3>
+                <div class="set" id="lifeguard">
+                    <p style="text-align: center;">Perform different in-pool rescues depending on the situation</p>
+                    <p>Required keep up fitness and swim at least 200m within 20-25 mins.</p>
+                    <p>Required to perform rescues quickly to avoid unnecessary injury or damage.</p>
+                    <p>We work VMI events such as ROTC pt or qualifications, sports events such as water 
+                        polo or NCAA swimming, VMI swim classes, and open lap swim.</p>
+                </div>
+                <div class="set" id="lifeguard2">
+                    <p style="padding-right: 20%">Must work as a team, knowing what our roles during a rescue</p>
+                    <p>Must manage time and schedule shifts throughout each week.</p>
+                </div>
+                <h3>Cyber Captain</h3>
+                <div class="set" id="cyber">
+                    <p style="text-align: center;">Responsible for cyber-related projects given and approved by directors and teachers.</p>
+                    <p>Cyber club, a club that travels to cyber events world-wide and compete, meeting with military cyber figures.</p>
+                    <p>Must work 8-10 hours of programming or other project work a week.</p>
+                    <p>Able to earn cyber related certificates as part of work.</p>
+                </div>
+                <h3>Summer Internship</h3>
+                <div class="set" id="internship">
+                    <p style="text-align: center;">NSA Experimental Tour, NET, program.</p>
+                    <p>Training and Equipment used: Guard spectrum Pro & Trimple R12i GNSS system.</p>
+                    <p style="max-width: 400px;">Data analysis phase, the group of interns gave a brief to our superiors on 
+                        what we'd accomplished so far, our approach to collecting data for the projects, 
+                        and what our next steps were for both projects.</p>
+                </div>
+            </div>
+            </div>
         </section>
     </main>
 </body>
